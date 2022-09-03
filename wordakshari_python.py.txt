@@ -1,0 +1,14 @@
+li=["himalaya","ambap","pravin","jsp"]
+la={}
+final=[]
+for i in li:
+    if i not in la:
+        la[i[0]]=i
+print(la)
+final.append(li[0])
+for i in li:
+    if i in final:
+        for j,k in la.items():
+            if i[len(i)-1]==j:
+                final.append(k)
+print(final)
